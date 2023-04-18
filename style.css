@@ -1,0 +1,289 @@
+body{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: sans-serif;
+}
+
+a{
+  color: white;
+}
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+.header{
+  height: 70vh;
+  background: url("image/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav{
+  padding:10px 25px ;
+  width: 100%;
+}
+.logo{
+  width: 2.5%;
+}
+
+.navright{
+  float: right;
+}
+
+.navright a{
+  padding-left: 20px;
+}
+
+.navright button{
+  background-color: #05a081;
+  border: none;
+  color: white;
+  border-radius: 2px;
+}
+
+.navright button:hover{
+  background-color: #21c3a3;
+}
+.content{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content input{
+  width: 83%;
+  height: 14%;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.content button{
+  width: 15%;
+  height: 13%;
+  padding: 8px;
+  font-size: 20px;
+  background-color: #05a081;
+  background-color: #05a081;
+  border: none;
+  color: white;
+  border-radius: 2px;
+}
+
+.content button:hover{
+  background-color: #21c3a3;
+}
+
+.photos{
+  color: grey;
+  padding:1%;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  padding-right:1%;
+}
+
+.row img{
+  width:24%;
+  height: 300px;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.row img:hover{
+  opacity: 0.6;
+}
+
+.footer{
+  height: 40vh;
+  margin-top: 30px;
+  background-color: #232a34;
+  padding-left: 100px;
+  padding-top: 50px;
+  color: #dddddd;
+}
+
+.footer>div{
+  display: inline-block;
+  width: 22vw;
+}
+
+.footer button{
+  color:black;
+  background-color: #dddddd;
+  border:none;
+  border-radius:3px;
+}
+
+.footer button:hover{
+  background-color: white;
+}
+
+.social-links a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  color: #232a34;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.social-links i{
+  padding-top: 7px;
+}
+
+.social-links a:hover{
+  color: white;
+  background-color: black;
+}
+
+ul li{
+  list-style-type: none;
+  font-size: 15px;
+  color: #dddddd;
+}
+
+ul{
+  padding-left: 0 !important;
+}
+
+li:hover{
+  color: white;
+}
+
+.two li , .three{
+  font-size: 15px;
+}
+
+#loading{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+
+/* modal-boxes */
+.modal-box{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.modal-box-content > img{
+  margin: 0 !important;
+  border: 2px solid rgb(35, 42, 52);
+  width: 100% !important;
+}
+
+.modal-box-content{
+  position: absolute;
+  text-align: center;
+  width: 24%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 1s ease-in-out 0s forwards;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-box-content img:hover{
+  opacity: 1;
+}
+
+.close-box{
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  cursor: pointer;
+  font-weight: 900 !important;
+  font-size: 2rem !important;
+  background-color: black;
+  padding: 0 14px;
+}
+
+.close-box:hover{
+  color: red;
+}
+
+
+
+@media screen
+ and (max-device-width: 500px)
+ and (min-device-width: 320px) {
+  .logo{
+    width: 7%;
+  }
+  .content{
+    height: 25vh !important;
+  }
+  .content input{
+    width: 83%;
+    height: 18%;
+    padding: 8px;
+    font-size: 20px;
+  }
+
+  .content button{
+    width: 15%;
+    height: 17%;
+    padding: 8px;
+    font-size: 20px;
+    background-color: #05a081;
+    background-color: #05a081;
+    border: none;
+    color: white;
+    border-radius: 2px;
+  }
+  .header{
+    height: 30vh !important;
+  }
+  .navright,span{
+    font-size: 30px;
+  }
+  .content>p{
+    font-size: 28px;
+  }
+  .row img {
+    width: 48% !important;
+    height: 320px !important;
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+  .modal-box-content > img{
+    margin: 0 !important;
+    border: 2px solid rgb(35, 42, 52);
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .modal-box-content{
+    width: 60%;
+    height: 400px;
+  }
+  .footer{
+  height: 18vh !important;
+  }
+
+}
